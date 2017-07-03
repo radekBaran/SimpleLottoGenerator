@@ -5,6 +5,32 @@
     android:layout_height="match_parent"
     android:background="#FFF"
     tools:context="com.example.radek.lottogenerator.MainActivity">
-    
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Naciśnij przycisk poniżej..."
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lotto"
+        android:layout_above="@id/textView"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:text="Generuj liczby"
+        android:textSize="18sp"/>
 
 </RelativeLayout>
